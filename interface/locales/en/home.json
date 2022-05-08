@@ -1,0 +1,17 @@
+{
+	"hero": {
+		"title": "Eventamin",
+		"description": "Eventamin means Event & Exhibition Support"
+	},
+	"section_one": {
+		"title": "Eventamin is free for ever!",
+		"description": "Here is where the buyer finds, meets and contacts suppliers directly Eventamin is the one of a kind B2B and B2C directory, is especially dedicated to the event & exhibition industry. Find the right suppliers anywhere in the world or be found. Suppliers can open a free of charge company profile to present their services to our massive buyer network. Our purpose is to make sourcing easier and more effective, saving time and money for the buyers, while driving business to the companies that have registered a public profile.",
+		"contact_button": "Get in Contact",
+		"join_button": "Join Free Now"
+	},
+	"section_two": {
+		"title": "Who is Eventamin?",
+		"description": "Eventamin means Event & Exhibition Support and is one of the leading global directories for the Event & Exhibition industry. We provide an ever growing network which is characterised by transparency and quality. Eventamin does not just increasing exposure for suppliers but also makes information readily available to buyers. Find Supplier in more than 180 countries or be found as Organisers, Booth Builders, event Hals or any other provider!",
+		"find_out_button": "Find Out More"
+	}
+}

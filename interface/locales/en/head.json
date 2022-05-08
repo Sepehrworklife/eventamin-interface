@@ -1,0 +1,84 @@
+{
+	"home": {
+		"title": "Eventamin - Home",
+		"description": "",
+		"keywords": ""
+	},
+	"about": {
+		"title": "Eventamin - About",
+		"description": "",
+		"keywords": ""
+	},
+	"contact": {
+		"title": "Eventamin - Contact",
+		"description": "",
+		"keywords": ""
+	},
+	"directory": {
+		"title": "Eventamin - Directory",
+		"description": "",
+		"keywords": ""
+	},
+	"login": {
+		"title": "Eventamin - Login",
+		"description": "",
+		"keywords": ""
+	},
+	"register": {
+		"title": "Eventamin - Registration",
+		"description": "",
+		"keywords": ""
+	},
+	"products": {
+		"title": "Eventamin - Products",
+		"description": "",
+		"keywords": ""
+	},
+	"account": {
+		"title": "Eventamin - Dashboard",
+		"description": "",
+		"keywords": "",
+		"destinations":  {
+			"title": "Dashboard - Destinations",
+			"description": "",
+			"keywords": ""
+		},
+		"messages":  {
+			"title": "Dashboard - Requests",
+			"description": "",
+			"keywords": ""
+		},
+		"products":  {
+			"title": "Dashboard - Products/Services",
+			"description": "",
+			"keywords": ""
+		},
+		"profile":  {
+			"title": "Dashboard - Profile",
+			"description": "",
+			"keywords": ""
+		}
+	},
+	"news": {
+		"title": "Eventamin - News",
+		"description": "",
+		"keywords": ""
+	},
+	"search": {
+		"company": {
+			"title": "Eventamin - Company Search",
+			"description": "",
+			"keywords": ""
+		},
+		"country": {
+			"title": "Eventamin - Country Search",
+			"description": "",
+			"keywords": ""
+		}
+	},
+	"member": {
+		"title": "Eventamin - Members",
+		"description": "",
+		"keywords": ""
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"account": {
+		"username": "Username",
+		"company": "Company",
+		"email": "Email",
+		"phone": "Phone",
+		"country": "Country",
+		"city" : "City",
+		"add_to_rfp": "Add To RFP",
+		"added_to_rfp": "Successfully Added"
+	},
+	"services": {
+		"title": "Services/Products",
+		"load_more": "Load More"
+	},
+	"overview": {
+		"title": "Overview",
+		"description_title": "Description",
+		"load_more": "Show More",
+		"show_less": "Show Less",
+		"organization_type_title": "Organization Type",
+		"offers_title": "Offers"
+	}
+}

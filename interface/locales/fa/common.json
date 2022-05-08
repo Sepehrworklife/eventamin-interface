@@ -1,0 +1,53 @@
+{
+	"persian": "فارسی",
+	"english": "انگلیسی",
+	"login": "ورود",
+	"register": "ثبت نام",
+	"title": "this is a test title",
+	"desc": "this is a test desc {{test}}",
+	"provider": "ارائه دهنده",
+	"previous": "قبلی",
+	"buyer": "خریدار",
+	"next": "بعدی",
+	"finish": "اتمام",
+	"back": "برگشت",
+	"event_agency": "",
+	"dmc": "",
+	"supplier": "",
+	"event_location": "",
+	"hotel": "",
+	"logout": "خروج",
+	"travel_tourism": "",
+	"tourism_convention": "",
+	"go_back_text": "برگشت",
+	"delete": "حذف",
+	"ask_delete_title": "اخطاریه حذف",
+	"ask_delete_desc": "این آیتم حذف خواهد شد. آیا مطمئن هستید؟",
+	"ask_delete_button": "حدف",
+	"add_to_request": "اضافه کردن به لیست",
+	"show_profile": "پروفایل",
+	"no_record": "نتیجه ای یافت نشد.",
+	"search_country_text": "جستجو بر اساس کشور",
+	"search_company_text": "جستجو بر اساس نام شرکت",
+
+	"appbar": {
+		"directory": "فهرست",
+		"home": "صفحه اصلی",
+		"news": "اخبار",
+		"products": "محصولات",
+		"account": "حساب کاربری",
+		"about": "درباره ما",
+		"register": "ثبت نام",
+		"login": "ورود",
+		"contact": "تماس با ما"
+	},
+
+	"accountmenu": {
+		"destinations": "مقصد ها",
+		"products": "محصولات/خدمات",
+		"settings": "تنظیمات",
+		"profile": "پروفایل",
+		"messages": "درخواست ها",
+		"dashboard": "داشبورد"
+	}
+}

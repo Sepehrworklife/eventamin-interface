@@ -1,0 +1,25 @@
+#tools_container {
+	width:100%;
+	min-height: 120px;
+	padding: 3em 0;
+
+	.list_item {
+		max-width: 100%;
+
+	}
+	.title {
+		font-weight: bold;
+	}
+	.divider {
+		margin-bottom: 2em;
+	}
+	.card {
+		width: 100%;
+	}
+
+	.list_item_text {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		display:inline-block;
+	}
+}

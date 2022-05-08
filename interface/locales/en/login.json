@@ -1,0 +1,13 @@
+{
+
+	"page_title": "Login page",
+	"page_desc": "Test Desc",
+	"section_title": "Login to your account",
+	"input_username": "Username",
+	"input_password": "Password",
+	"register_link_text": "Dont have Account yet? Register Now!",
+	"home_link_text": "Get back to Homepage.",
+	"submit_button_text": "Login",
+	"login_success": "You have logged in successfully.",
+	"try_again_warning": "Please login again to continue."
+}

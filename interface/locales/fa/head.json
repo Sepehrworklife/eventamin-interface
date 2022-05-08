@@ -1,0 +1,84 @@
+{
+	"home": {
+		"title": "اوینتامین - صفحه اصلی",
+		"description": "",
+		"keywords": ""
+	},
+	"about": {
+		"title": "اوینتامین - درباره ما",
+		"description": "",
+		"keywords": ""
+	},
+	"contact": {
+		"title": "اوینتامین - تماس با ما",
+		"description": "",
+		"keywords": ""
+	},
+	"directory": {
+		"title": "اوینتامین - فهرست",
+		"description": "",
+		"keywords": ""
+	},
+	"login": {
+		"title": "اوینتامین - ورود",
+		"description": "",
+		"keywords": ""
+	},
+	"register": {
+		"title": "اوینتامین - ثبت نام",
+		"description": "",
+		"keywords": ""
+	},
+	"products": {
+		"title": "اوینتامین - محصولات",
+		"description": "",
+		"keywords": ""
+	},
+	"account": {
+		"title": "اوینتامین - پنل کاربری",
+		"description": "",
+		"keywords": "",
+		"destinations":  {
+			"title": "پنل کاربری - مقصد ها",
+			"description": "",
+			"keywords": ""
+		},
+		"messages":  {
+			"title": "پنل کاربری - درخواست ها",
+			"description": "",
+			"keywords": ""
+		},
+		"products":  {
+			"title": "پنل کاربری - محصول/خدمات",
+			"description": "",
+			"keywords": ""
+		},
+		"profile":  {
+			"title": "پنل کاربری - پروفایل",
+			"description": "",
+			"keywords": ""
+		}
+	},
+	"news": {
+		"title": "پنل کاربری - اخبار",
+		"description": "",
+		"keywords": ""
+	},
+	"search": {
+		"company": {
+			"title": "اوینتامین - جستجو بر اساس شرکت",
+			"description": "",
+			"keywords": ""
+		},
+		"country": {
+			"title": "اوینتامین - جستجو بر اساس کشور",
+			"description": "",
+			"keywords": ""
+		}
+	},
+	"member": {
+		"title": "اوینتامین - کاربر",
+		"description": "",
+		"keywords": ""
+	}
+}

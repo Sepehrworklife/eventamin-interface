@@ -1,0 +1,44 @@
+{
+  "name": "interface",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@date-io/date-fns": "^2.13.1",
+    "@date-io/date-fns-jalali": "^2.13.1",
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
+    "@mui/icons-material": "^5.2.5",
+    "@mui/lab": "^5.0.0-alpha.63",
+    "@mui/material": "^5.2.7",
+    "@mui/x-data-grid": "^5.4.0",
+    "axios": "^0.24.0",
+    "countries-list": "^2.6.1",
+    "date-fns": "^2.28.0",
+    "date-fns-jalali": "^2.28.0-0",
+    "form-data": "^4.0.0",
+    "formik": "^2.2.9",
+    "jwt-decode": "^3.1.2",
+    "next": "^12.1.0",
+    "next-translate": "^1.2.0",
+    "nextjs-progressbar": "0.0.13",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-material-ui-carousel": "^3.2.0",
+    "react-perf-devtool": "^3.1.8",
+    "sass": "^1.45.2",
+    "stylis": "^4.0.13",
+    "stylis-plugin-rtl": "^2.1.1",
+    "use-dark-mode": "^2.3.1",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
+    "install-peers": "^1.0.3"
+  }
+}

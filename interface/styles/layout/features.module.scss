@@ -1,0 +1,28 @@
+#features_container {
+	width: 100%;
+	min-height: 50px;
+	padding: 4em 0;
+	
+	& .item {
+		padding: 0 2em;
+		@media screen and (max-width: 900px){
+			padding: 1em 0;
+		}
+	}
+
+	& .item h5 {
+		margin-bottom: 0.6em;
+		font-weight: 600;
+		display: flex;
+		align-items: center;
+
+		& span {
+			margin-right:0.3em;
+			margin-left: 0.3em;
+		}
+
+		& .icon {
+			font-size: 1.4em;
+		}
+	}
+}

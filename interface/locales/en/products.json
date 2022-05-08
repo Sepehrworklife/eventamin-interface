@@ -1,0 +1,18 @@
+{
+	"list": {
+		"profile_page": "Profile Page",
+		"add_to_rfp": "Add to RFP",
+		"attachments": "Attachments",
+		"images": "Images"
+	},
+	"filters": {
+		"title": "Filters",
+		"country_label": "Select any country",
+		"category_label": "Category",
+		"keywords_label": "Keywords",
+		"category": {
+			"products_label": "Products",
+			"services_label": "Services"
+		}
+	}
+}

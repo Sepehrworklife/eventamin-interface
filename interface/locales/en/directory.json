@@ -1,0 +1,39 @@
+{
+	"hero": {
+		"head": "Directory",
+		"sub_head": "Start Exploring"
+	},
+	"features": {
+		"search": {
+			"title": "Search",
+			"content": "By using the quick-search you can either search for countries or cities which will give you a result of registered suppliers in these destinations"
+		},
+		"results": {
+			"title": "Results",
+			"content": "The search results show a preview with important facts of each company in random order but premium members will appear on top"
+		},
+		"get_in_touch": {
+			"title": "Get in touch",
+			"content": "Send email forms over the RFP tool or simply use the phone or email button to get in contact with suppliers directly"
+		}
+	},
+	"tools": {
+		"title": "Tools",
+		"rfp_card": {
+			"title": "RFP-Card",
+			"content": [
+				"Add potential supplier to your RFP-card",
+				"Request multiple companies with just one click",
+				"Send an email form and get quotations back"
+			]
+		},
+		"favorites_list": {
+			"title": "Favorites List",
+			"content": [
+				"Add potential supplier to your favorites",
+				"Safe lists of supplier in your account",
+				"Use lists to send RFPs to them"
+			]
+		}
+	}
+}

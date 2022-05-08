@@ -1,0 +1,41 @@
+#cta_register_container {
+	width: 100%;
+	min-height: 250px;
+	position: relative;
+	background-image: url("/uploads/images/world-map-bg.jpg");
+	overflow: hidden;
+
+	&:before {
+		width: 120%;
+		height: 120%;
+		background-position: center;
+		background-size: cover;
+		background-image: url("/uploads/images/world-map-bg.jpg");
+		content: "";
+		position: absolute;
+		filter: blur(4px);
+		-webkite-filter: blur(4px);
+	}
+	& .container_content {
+		position: relative;
+		max-width: 450px;
+		margin: 0 auto;
+		z-index: 9;
+		padding: 3em 0;
+
+		& p {
+			color: #fff;
+			font-weight: 600;
+		}
+		& .buttons {
+			display: flex;
+			margin-top: 1em;
+			justify-content: center;
+
+			& button {
+				margin-left: 0.5em;
+				margin-right: 0.5em;
+			}
+		}
+	}
+}

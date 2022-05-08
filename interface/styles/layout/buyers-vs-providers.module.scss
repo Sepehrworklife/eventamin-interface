@@ -1,0 +1,29 @@
+#diffrence_container {
+	width: 100%;
+	min-height: 100px;
+	padding: 5rem 0;
+
+	.title {
+		font-weight: 600;
+	}
+	.mb {
+		margin-bottom:2rem;
+	}
+	.item {
+		margin-top: 2rem;;
+		min-height: 10rem;
+		display:flex;
+		align-items: center;
+	}
+
+	.item:hover .icon {
+		color: #1976d2;
+	}
+
+	@media only screen and (max-width:600px){
+		.item {
+			text-align:center;
+			min-height: initial;
+		}
+	}
+}

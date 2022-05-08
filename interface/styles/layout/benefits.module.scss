@@ -1,0 +1,24 @@
+#benefits_container {
+	width: 100%;
+	min-height: 100px;
+	padding: 3em 0;
+	.title {
+		font-weight: 700;
+	}
+	.item {
+		width: 100%;
+	}
+
+	.divider {
+		margin-bottom: 2em ;
+	}
+
+	& .item h5 {
+		font-weight: 600;
+		margin-bottom: 0.2em;
+	}
+
+	& .item p {
+		font-weight: 200;
+	}
+}

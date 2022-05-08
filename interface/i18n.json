@@ -1,0 +1,17 @@
+{
+  "locales": ["en", "fa"],
+  "defaultLocale": "en",
+  "pages": {
+    "*": ["common", "validation", "home", "layouts", "modules", "head"],
+	"/login": ["login"],
+	"/directory": ["directory"],
+	"rgx:/search/*": ["search"],
+	"/about": ["about"],
+	"/contact": ["about"],
+	"/register": ["register"],
+	"rgx:^/account/*": ["account"],
+	"/products": ["products"],
+	"rgx:^/news/*": ["news"],
+	"rgx:^/member/*": ["member"]
+  }
+}

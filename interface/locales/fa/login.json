@@ -1,0 +1,13 @@
+{
+
+	"page_title": "صفحه ورود",
+	"page_desc": "ورود به پنل کاربری",
+	"section_title": "ورود به پنل",
+	"input_username": "نام کاربری",
+	"input_password": "رمز عبور",
+	"register_link_text": "هنوز حساب کاربری ندارید؟ همین حالا بسازید!",
+	"home_link_text": "برگشت به صفحه اصلی",
+	"submit_button_text": "ورود",
+	"login_success": "ورود با موفقیت انجام شد.",
+	"try_again_warning": "برای ادامه لطفا دوباره وارد شوید"
+}

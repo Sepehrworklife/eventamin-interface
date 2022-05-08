@@ -1,0 +1,47 @@
+{
+	"rfp": {
+		"title": "لیست درخواست ها",
+		"general_request_button": "درخواست عمومی",
+		"project_request_button": "درخواست پروژه"
+	},
+	"requests": {
+		"success": "درخواست با موفقیت ارسال شد.",
+		"error": "مشکلی بوجود آمده. لطفا مجدد امتحان بفرمایید.",
+		"contactform": {
+			"title": "اطلاعات تماس",
+			"name_label": "نام کامل",
+			"email_label": "ایمیل",
+			"company_label" : "شرکت",
+			"phone_label": "شماره تماس",
+			"job_label": "عنوان شغلی",
+			"country_label": "کشور"
+		},
+		"project": {
+			"title": "ارسال درخواست پروژه",
+			"form": {
+				"title": "اطلاعات پروژه",
+				"organization": "شرکت",
+				"individual": "شخص",
+				"duration_label": "مدت زمان",
+				"budget_label": "بودجه به دلار",
+				"guests_amount_label": "تعداد مهمانان",
+				"start_date_label": "تاریخ شروع",
+				"end_date_label": "تاریخ اتمام",
+				"destinations_label": "مقصد ها",
+				"attachments_label": "پیوست ها",
+				"attendees_label": "سفر شرکت کنندگان",
+				"description": "توضیحات"
+			}
+
+		},
+		"general": {
+			"title": "ارسال درخواست عمومی",
+			"form": {
+				"title": "اطلاعات عمومی",
+				"description_label": "توضیحات",
+				"attachments_label": "آپلود پیوست ها"
+			}
+		},
+		"send": "ارسال درخواست"
+    }
+}

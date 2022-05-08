@@ -1,0 +1,16 @@
+{
+	"page_title": "ثبت نام در سایت",
+	"section_title": "ثبت نام",
+	"login_link_text": "حساب کابری دارید؟ وارد شوید!",
+	"home_link_text": "برگشت به صفحه اصلی",
+	"submit_button_text": "ثبت نام",
+	"input_name": "نام کامل به انگلیسی",
+	"input_name_fa": "نام کامل به فارسی",
+	"input_phone": "شماره تماس",
+	"input_email": "پست الکترونیکی",
+	"input_password": "رمز عبور",
+	"input_username": "نام کاربری",
+	"phone_helper_text": "همراه با پیش شماره کشور",
+	"unique_entry_exists_error": "شماره، ایمیل یا نام کاربری قبلا ثبت شده است.",
+	"registered_success": "لطفا برای تایید حساب کاربری ایمیل خود را چک کنید. "
+}

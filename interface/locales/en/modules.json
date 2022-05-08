@@ -1,0 +1,47 @@
+{
+	"rfp": {
+		"title": "Request-Card",
+		"general_request_button": "General Request",
+		"project_request_button": "Project Request"
+	},
+	"requests": {
+		"success": "Request sended successfully",
+		"error": "Request send failed, Please try again later.",
+		"contactform": {
+			"title": "Contact Information",
+			"name_label": "Full Name",
+			"email_label": "Email Address",
+			"company_label" : "Company Name",
+			"phone_label": "Phone Number",
+			"job_label": "Job Title",
+			"country_label": "Country"
+		},
+		"project": {
+			"title": "Send Project Request",
+			"form": {
+				"title": "Project Info",
+				"organization": "Organization",
+				"individual": "Individual",
+				"duration_label": "Duration",
+				"budget_label": "Budget in $",
+				"guests_amount_label": "Guests Amount",
+				"start_date_label": "Start Date of Project",
+				"end_date_label": "End Date of Project",
+				"destinations_label": "Destinations",
+				"attachments_label": "Attachments",
+				"attendees_label": "Travel of attendees",
+				"description": "Description"
+			}
+
+		},
+		"general": {
+			"title": "Send General Request",
+			"form": {
+				"title": "General Info",
+				"description_label": "Description",
+				"attachments_label": "Upload Attachments"
+			}
+		},
+		"send": "Send Request"
+	}
+}

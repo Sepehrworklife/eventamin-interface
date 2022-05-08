@@ -1,0 +1,24 @@
+{
+	"account": {
+		"username": "نام کاربری",
+		"company": "شرکت",
+		"email": "ایمیل",
+		"phone": "شماره تماس",
+		"country": "کشور",
+		"city" : "شهر",
+		"add_to_rfp": "اضافه کردن به RFP",
+		"added_to_rfp": "اضافه شد"
+	},
+	"services": {
+		"title": "محصولات/خدمات",
+		"load_more": "بیشتر"
+	},
+	"overview": {
+		"title": "خلاصه",
+		"description_title": "توضیحات",
+		"load_more": "بیشتر",
+		"show_less": "کمتر",
+		"organization_type_title": "مدل شرکت",
+		"offers_title": "پیشنهادات"
+	}
+}

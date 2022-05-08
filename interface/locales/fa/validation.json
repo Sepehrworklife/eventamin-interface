@@ -1,0 +1,19 @@
+{
+	"field_required": "این فیلد اجباریست",
+	"uncorrect_email": "ایمیل معتبر وارد کنید.",
+	"max": "{{field}} charachters must lower than {{num}}.",
+	"min": "{{field}} charachters must higher than {{num}}",
+	"invalid_phone": "شماره تماس معتبر وارد کنید.",
+	"something_wrong": "مشکلی بوجود آماده، چند ثانیه بعد تلاش کنید.",
+	"invalid_credentials": "اطلاعات وارد شده صحیح نمیباشد.",
+	"account_not_verified": "حساب کاربری فعال نمیباشد. ایمیل خود را بررسی کنید.",
+	"correct_website": "لطفا دامنه وبسایت معتبر وارد کنید.",
+	"file_upload_max_length_error": "می توانید {{length}} فایل آپلود کنید.",
+	"file_upload_type_error": "فایل با فرمت های روبرو قابل آپلود میباشد: {{types}}.",
+	"file_upload_size_error": "فایل مورد نظر از {{size}} KB کمتر باید باشد.",
+	"file_upload_success_message": "فایل(ها) آپلود شد.",
+	"min_items": "{{field}} must have at least {{num}} item(s).",
+	"max_items": "{{field}} must have lower than {{num}} item(s).",
+	"activate_failed": "در حین فعالسازی اکانت شما مشکلی بوجود آماده با پشتیبانی تماس بگیرید",
+	"activate_success": "حساب کاربری شما با موفقیت فعال شد."
+}

@@ -1,0 +1,102 @@
+{
+	"cta_register": {
+		"title": "Register to become part of our global MICE & Tourism Directory!",
+		"login": "Login",
+		"register": "Sign Up Now!"
+	},
+	"benefits": {
+		"title": "Benefits",
+		"find": {
+			"title": "Find",
+			"content": "Find you suppliers anywhere in the world by using the search tool"
+		},
+		"be_found": {
+			"title": "Be Found",
+			"content": "Be found and present your company with valuable information for decision making buyers"
+		},
+		"roi": {
+			"title": "ROI",
+			"content": "Increasing ROI for all stakeholders in the process from sourcing to marketing and sales"
+		}
+	},
+	"grow": {
+		"title": "Grow Your Business with Eventamin",
+		"directory": {
+			"title": "Visit our Directory",
+			"content": "Join our network by registering"
+		},
+
+		"profile": {
+			"title": "Create your Profile",
+			"content": "Confirm your email and fill in the required information"
+		},
+		"eventamin": {
+			"title": "Eventamin",
+			"content": "Your profile present to the world 24/7"
+		},
+		"search": {
+			"title": "Buyers Search",
+			"content": "All your contact details are public"
+		},
+		"rfp": {
+			"title": "RFP's",
+			"content": "Buyers get in touch directly"
+		}
+	},
+	"buyers_vs_providers": {
+		"time":{
+			"title": "Time is Money",
+			"content": "Traditional sourcing costs a lot of resources. Now you can connect easily with the right service provider for your next project, saving time and money"
+		},
+		"information": {
+			"title": "Valuable information",
+			"content": "Find valuable and completive information on potential suppliers in one hub to enhance efficiency in sourcing"
+		},
+		"exclusive": {
+			"title": "Exclusive buyer programs",
+			"content": "Get the chance to join networking-trips, buyer programs and exclusive events by EVINTRA"
+		},
+		"reach": {
+			"title": "Reach and Exposure",
+			"content": "Your profile 24/7 presented to interested prospects generating more than 3500 search requests per day"
+		},
+		"transparent": {
+			"title": "100% Transparent",
+			"content": "No middleman, no commission. Buyers contact you directly over the contact details provided in your profile"
+		},
+		"premium": {
+			"title": "Premium Option",
+			"content": "Take full advantage of EVINTRA and upgrade to PREMIUM for a massive gain in exposure online and in our print catalogue"
+		}
+	},
+	"join_member": {
+		"title": "No charges - No commissions - No compromise",
+		"register_button": "Sign Up Now",
+		"buyer": {
+			"title": "Join as Buyer",
+			"content": [
+				"Exclusive invitations to fam-trips and events",
+				"Preferred access to special events",
+				"Access to special supplier promos and discounts",
+				"Keep track of your RFPs",
+				"Safe lists of suppliers",
+				"Find suppliers in over 185 countries",
+				"Contact suppliers directly, no fees or commission"
+			]
+		},
+		"provider": {
+			"title": "Join as Provider",
+			"content": [
+				"Get massive exposure to B2B buyer network",
+				"Fully transparent directory without fees or commission",
+				"Strong backlink to your homepage with direct traffic",
+				"Get new leads and RFPs to grow your business",
+				"Chance to upgrade for maximum exposure with a premium profile",
+				"Free listing in our online & print copies of Eventamin’s ads"
+			]
+		}
+	},
+	"search": {
+		"search_for": "Search For"
+	}
+}

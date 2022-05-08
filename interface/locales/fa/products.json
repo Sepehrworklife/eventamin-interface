@@ -1,0 +1,18 @@
+{
+	"list": {
+		"profile_page": "صفحه پروفایل",
+		"add_to_rfp": "اضافه به لیست درخواست",
+		"attachments": "پیوست ها",
+		"images": "عکس ها"
+	},
+	"filters": {
+		"title": "فیلتر",
+		"country_label": "کشوری را انتخاب کنید",
+		"category_label": "دسته بندی",
+		"keywords_label": "کلید واژه",
+		"category": {
+			"products_label": "محصول",
+			"services_label": "خدمت"
+		}
+	}
+}

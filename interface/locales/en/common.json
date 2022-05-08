@@ -1,0 +1,53 @@
+{
+	"persian": "Persian",
+	"english": "English",
+	"login": "Login",
+	"register": "Register",
+	"title": "this is a test title",
+	"desc": "this is a test desc {{test}}",
+	"provider": "Provider",
+	"previous": "Previous",
+	"buyer": "Buyer",
+	"next": "Next",
+	"finish": "Finish",
+	"back": "Back",
+	"event_agency": "Event Agency",
+	"dmc": "DMC",
+	"supplier": "Supplier",
+	"event_location": "Event Location",
+	"hotel": "Hotel",
+	"logout": "Logout",
+	"travel_tourism": "Travel & Tourism",
+	"tourism_convention": "Tourism/Convention",
+	"go_back_text": "GO BACK",
+	"delete": "Delete",
+	"ask_delete_title": "Delete Prompt",
+	"ask_delete_desc": "This item will be deleted, are you sure?",
+	"ask_delete_button": "Delete Now",
+	"add_to_request": "Add to request",
+	"show_profile": "Show Profile",
+	"no_record": "There is no record to display",
+	"search_country_text": "Explore by Country",
+	"search_company_text": "Explore by Company Name",
+
+	"appbar": {
+		"directory": "Directory",
+		"home": "Home",
+		"news": "News",
+		"products": "Products",
+		"account": "Account",
+		"about": "About",
+		"register": "Sign Up",
+		"login": "Login",
+		"contact": "Contact Us"
+	},
+
+	"accountmenu": {
+		"destinations": "Destinations",
+		"products": "Products",
+		"settings": "Settings",
+		"profile": "Profile",
+		"messages": "Requests",
+		"dashboard": "Dashboard"
+	}
+}

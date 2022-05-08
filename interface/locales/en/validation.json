@@ -1,0 +1,20 @@
+{
+	"field_required": "This field is required",
+	"uncorrect_email": "Email must be valid email.",
+	"max": "{{field}} charachters must lower than {{num}}.",
+	"min": "{{field}} charachters must higher than {{num}}",
+	"invalid_phone": "Phone must be valid phone.",
+	"something_wrong": "Something gone wrong, Please try again in a moment.",
+	"invalid_credentials": "Invalid Credentials",
+	"account_not_verified": "Account is not verified yet, Please check your Mail.",
+	"correct_website": "Please enter correct website.",
+	"file_upload_max_length_error": "You can upload {{length}} files only.",
+	"file_upload_type_error": "You can upload with this formats: {{types}}.",
+	"file_upload_size_error": "You can upload with size lower than {{size}} KB.",
+	"file_upload_success_message": "File(s) uploaded successfully.",
+	"min_items": "{{field}} must have at least {{num}} item(s).",
+	"max_items": "{{field}} must have lower than {{num}} item(s).",
+	"activate_failed": "There is an error to activate your account please call support",
+	"activate_success": "Account activated successfully"
+	
+}

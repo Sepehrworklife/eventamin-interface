@@ -1,0 +1,25 @@
+{
+	"hero": {
+		"sub_head": "About us",
+		"head": "Every game breaking innovation begins with the spark of single idea"
+	},
+	"section_one": {
+		"title": "Providing transparency and quality for the global event industry",
+		"description": "Eventamin provides an ever-growing global event & exhibition industry directory which spans over 180 countries. Aiming to drive digital revolution in the industry, we have created a one of a kind directory where buyers and suppliers from around the world can find each other directly. Eventamin does not only increases exposure for suppliers but also makes information readily available to buyers."
+	},
+	"second_section": {
+		"title": "Book your venue and organise your events through us ",
+		"description": "Eventamin  is a global B2B directory for the Event & Exhibition Industry. Find Suppliers in over 180 countries or be found as DMC, Organizers, Event Location, Event Designers or any other Provider! We provide an ever-growing world-wide network which is characterized by transparency and quality. Eventamin does not just increasing exposure for suppliers but also makes information readily available to buyers. ",
+		"second_button_text": "First Button",
+		"register_button_text": "Register Now"
+	},
+	"contact": {
+		"sub_head": "Keep in Touch with Us",
+		"email_title": "Email",
+		"email": "info@eventamin.com",
+		"phone_title": "Phone",
+		"phone": "+98 211232131",
+		"address_title": "Address",
+		"address": "Iran, Tehran, Jamshidiyeh"
+	}
+}
