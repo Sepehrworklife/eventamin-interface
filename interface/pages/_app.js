@@ -26,7 +26,6 @@ const MyApp = ({ Component, pageProps }) => {
 	const { value: isDark, toggle: toggleDarkMode } = useDarkMode(false);
 	const { rfp, setRfp } = React.useState([]);
 
-
 	// Create rtl cache
 	const cacheRtl = createCache({
 		key: "muirtl",
@@ -34,17 +33,16 @@ const MyApp = ({ Component, pageProps }) => {
 	});
 
 	React.useEffect(() => {
-		if (lang === "fa")
-			isDark ? setActiveTheme(RtlDarkTheme) : setActiveTheme(RtlLightTheme);
-		else isDark ? setActiveTheme(DarkTheme) : setActiveTheme(LightTheme);
-	}, [isDark, lang]);
-
-	React.useEffect(() => {
 		auth.tokenExpire();
 		if (lang === "fa") {
 			document.body.setAttribute("dir", "rtl");
+			isDark ? setActiveTheme(RtlDarkTheme) : setActiveTheme(RtlLightTheme);
+		} else {
+			isDark ? setActiveTheme(DarkTheme) : setActiveTheme(LightTheme);
+			document.body.setAttribute("dir", "ltr");
 		}
-	}, [lang]);
+	}, [isDark, lang]);
+
 
 	if (lang === "fa")
 		return (
@@ -70,16 +68,16 @@ const MyApp = ({ Component, pageProps }) => {
 	return (
 		<>
 			<ThemeProvider theme={activeTheme}>
-						<RFPProvider>
-				<NextNprogress
-					color="#29D"
-					startPosition={0.3}
-					stopDelayMs={200}
-					height={8}
-					showOnShallow={true}
-				/>
-				<CssBaseline />
-				<Component {...pageProps} rfp={rfp} setRfp={setRfp} />
+				<RFPProvider>
+					<NextNprogress
+						color="#29D"
+						startPosition={0.3}
+						stopDelayMs={200}
+						height={8}
+						showOnShallow={true}
+					/>
+					<CssBaseline />
+					<Component {...pageProps} rfp={rfp} setRfp={setRfp} />
 				</RFPProvider>
 			</ThemeProvider>
 		</>

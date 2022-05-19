@@ -44,6 +44,16 @@ export const fetchUser = async (id) => {
 	return res;
 }
 
+export const sendActivationEmail = async (user, userId, email) => {
+	let endpoint = Api.url+ "otp/";
+	let config = {headers: Api.authHeader, params: {
+		user: user,
+		user_id: userId,
+		email: email
+	}};
+	const res = await axios.post(endpoint,{} ,config);
+	return res;
+}
 export const activateUser = async (user, userId, code) => {
 	let endpoint = Api.url+ "otp/";
 	let config = {headers: Api.authHeader, params:{
@@ -51,7 +61,7 @@ export const activateUser = async (user, userId, code) => {
 		user: user,
 		user_id: userId
 	}};
-	const res = axios.get(endpoint, config);
+	const res = await axios.get(endpoint, config);
 	return res;
 }
 

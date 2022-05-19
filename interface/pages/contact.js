@@ -12,7 +12,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import useTranslation from "next-translate/useTranslation";
 
 const Contact = () => {
-	const { t } = useTranslation("about");
+	const { t,lang } = useTranslation("about");
 	return (
 		<>
 			
@@ -118,7 +118,7 @@ const Contact = () => {
 								<Typography
 									variant="h5"
 									component="div"
-									sx={{ m: 4 }}
+									sx={lang === "fa" ? { m: 4, direction: "rtl" } : {m: 4, direction: "ltr"}}
 									textAlign="center"
 									fontWeight="bold"
 								>

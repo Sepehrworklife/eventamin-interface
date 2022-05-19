@@ -1,4 +1,4 @@
-import { Container, Typography, Grid } from "@mui/material";
+import { Container, Typography, Grid, LinearProgress } from "@mui/material";
 import Head from "next/head";
 import React from "react";
 import MainNavbar from "../components/layouts/navbar/main";
@@ -15,8 +15,10 @@ const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const Products = () => {
 	// Hooks
 	const { t, lang } = useTranslation("products");
+	const [isLoading, setIsLoading] = React.useState(true);
 	const router = useRouter();
 	const rfpRef = React.useRef(null);
+	
 
 	// Initial Stataes
 	const [projectModal, setProjectModal] = React.useState(false);

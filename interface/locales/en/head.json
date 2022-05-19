@@ -1,68 +1,68 @@
 {
 	"home": {
-		"title": "Eventamin - Home",
-		"description": "",
-		"keywords": ""
+		"title": "Search Our Event Service Providers Directory - Eventamin- Home",
+		"description": "Find your right supplier or be found in EVENTAMIN. Sign up now it is free of charge for ever! Eventamin provides a global Event directory which spans over 120 countries.",
+		"keywords": "event and exhibition service providers, event supplier, eventamin directory, event contact suppliers directly, conferencing, exhibitions & meeting, entertainment and venue sourcing , event coordination, "
 	},
 	"about": {
-		"title": "Eventamin - About",
-		"description": "",
-		"keywords": ""
+		"title": "Learn More About Us- Eventamin - About",
+		"description": "Eventamin, Your worldwide comprehensive event & exhibition directory",
+		"keywords": "event management , event and exhibition providers, event management services, exhibition and event organizers"
 	},
 	"contact": {
-		"title": "Eventamin - Contact",
-		"description": "",
-		"keywords": ""
+		"title": "Get in Touch and Contac Us-Eventamin - Contact",
+		"description": "Your worldwide comprehensive event & exhibition directory. We respond within 24 hours.",
+		"keywords": " generate business, eventamin contacts list, events RFP, business networking, trade connection "
 	},
 	"directory": {
-		"title": "Eventamin - Directory",
-		"description": "",
-		"keywords": ""
+		"title": "Comprehensive List of Service & Equipment Providers- Eventamin - Directory",
+		"description": "EVENTAMIN is an innovative global venue sourcing platform connecting professionals looking to organize and host events and venue operators looking to capture new business.",
+		"keywords": "ehibition directory, event search engine, services partners,  contact suppliers directly, operators service providers, event industry professionals"
 	},
 	"login": {
-		"title": "Eventamin - Login",
-		"description": "",
-		"keywords": ""
+		"title": "Login to Your Account- Eventamin - Login",
+		"description": "Your worldwide comprehensive event & exhibition directory",
+		"keywords": "product directory job,  team services partners, services partners contact, industry professionals"
 	},
 	"register": {
-		"title": "Eventamin - Registration",
-		"description": "",
-		"keywords": ""
+		"title": "Free Registration for Event Service Providers- Eventamin - Registration",
+		"description": "Your worldwide comprehensive event & exhibition directory",
+		"keywords": "Product Directory, Stand Builder & Equipment, Audio Visual Services, Event Organizer, Entertainers & Performers, Event Design, Event Teams, Transportation, Event Technology, Language Services & Translation, Event Lighting, Event Marketing, PR & Communications, Photography, Venues & Conference Halls, DMCs, Business Tours"
 	},
 	"products": {
-		"title": "Eventamin - Products",
-		"description": "",
-		"keywords": ""
+		"title": "Directory of Services & Products- Eventamin - Products",
+		"description": "Eventamin provide a wide range of services from event organizig to equipments of eventa & exhibitions.",
+		"keywords": "Product Directory, Stand Builder & Equipment, Audio Visual Services, Event Organizer, Entertainers & Performers, Event Design, Event Teams, Transportation, Event Technology, Language Services & Translation, Event Lighting, Event Marketing, PR & Communications, Photography, Venues & Conference Halls, DMCs, Business Tours"
 	},
 	"account": {
 		"title": "Eventamin - Dashboard",
-		"description": "",
-		"keywords": "",
+		"description": "Eventamin Dashboared ",
+		"keywords": "grow business, services partners contact, add potential supplier, exhibition professionals",
 		"destinations":  {
 			"title": "Dashboard - Destinations",
-			"description": "",
-			"keywords": ""
+			"description": "Eventamin Dashboared ",
+			"keywords": "grow business, services partners contact, add potential supplier, exhibition professionals"
 		},
 		"messages":  {
 			"title": "Dashboard - Requests",
-			"description": "",
-			"keywords": ""
+			"description": "Eventamin Dashboared ",
+			"keywords": "grow business, services partners contact, add potential supplier, exhibition professionals"
 		},
 		"products":  {
 			"title": "Dashboard - Products/Services",
-			"description": "",
-			"keywords": ""
+			"description": "Eventamin Dashboared ",
+			"keywords": "grow business, services partners contact, add potential supplier, exhibition professionals"
 		},
 		"profile":  {
 			"title": "Dashboard - Profile",
-			"description": "",
-			"keywords": ""
+			"description": "Eventamin Dashboared ",
+			"keywords": "grow business, services partners contact, add potential supplier, exhibition professionals"
 		}
 	},
 	"news": {
-		"title": "Eventamin - News",
-		"description": "",
-		"keywords": ""
+		"title": "Event & Exhibition News- Eventamin - News",
+		"description": "International event & exhibition news,  videos and reports about the industry technologies, suppliers and organizations",
+		"keywords": " industry transforming,  events industry,  venue operators, event organizers, revolutionize events industry,"
 	},
 	"search": {
 		"company": {
@@ -78,7 +78,7 @@
 	},
 	"member": {
 		"title": "Eventamin - Members",
-		"description": "",
-		"keywords": ""
+		"description": "Login & membership registration.",
+		"keywords": "industry professionals, event specialists, eventamin suppliers, eventamin service providers"
 	}
 }

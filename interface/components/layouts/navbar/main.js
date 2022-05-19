@@ -1,4 +1,6 @@
 import * as React from "react";
+import TranslateIcon from "@mui/icons-material/Translate";
+import Image from "next/image";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Hidden from "@mui/material/Hidden";
@@ -19,6 +21,7 @@ import { useRouter } from "next/router";
 import Authenticate from "../../../utils/authenticate";
 import useTranslation from "next-translate/useTranslation";
 const Api = require("../../../constants/api.json");
+import setLanguage from 'next-translate/setLanguage'
 
 const MainNavbar = () => {
 	const auth = new Authenticate();
@@ -37,6 +40,10 @@ const MainNavbar = () => {
 		setAnchorElUser(event.currentTarget);
 	};
 
+	const handleSwitchLanguage = async() => {
+		if (lang === "en") await setLanguage('fa')
+		else await setLanguage('en')
+	};
 	const actionLogout = (e) => {
 		setAnchorElNav(null);
 		auth.removeToken();
@@ -65,15 +72,6 @@ const MainNavbar = () => {
 			<AppBar position="static">
 				<Container maxWidth="xl">
 					<Toolbar disableGutters>
-						<Typography
-							variant="h6"
-							noWrap
-							component="div"
-							sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
-						>
-							Eventamin
-						</Typography>
-
 						<Box
 							sx={{
 								flexGrow: 1,
@@ -146,17 +144,14 @@ const MainNavbar = () => {
 								</MenuItem>
 							</Menu>
 						</Box>
-						<Typography
-							variant="h6"
-							noWrap
-							component="div"
-							sx={{
-								flexGrow: 1,
-								display: { xs: "flex", md: "none" },
-							}}
-						>
-							Eventamin
-						</Typography>
+						<Box sx={{ mr: 2, mt: 1 }}>
+							<Image
+								src="/uploads/images/logo.png"
+								alt="Eventamin"
+								height="50"
+								width="50"
+							/>
+						</Box>
 						<Box
 							sx={{
 								flexGrow: 1,
@@ -235,8 +230,14 @@ const MainNavbar = () => {
 								</MenuItem>
 							</Hidden>
 						)}
+
+						<MenuItem onClick={handleSwitchLanguage}>
+							<IconButton color="inherit">
+								<TranslateIcon />
+							</IconButton>
+						</MenuItem>
 						<MenuItem onClick={darkModeHandler}>
-							<IconButton sx={{ ml: 1 }} color="inherit">
+							<IconButton color="inherit">
 								{isDark ? <Brightness7Icon /> : <Brightness4Icon />}
 							</IconButton>
 						</MenuItem>

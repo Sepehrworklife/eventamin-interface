@@ -1,4 +1,8 @@
 {
+	"seconds": "s",
+	"didnt_receive_email": "Didnt recieve any email?",
+	"check_spam": "Please check your spam folder.",
+	"resend": "Resend",
 	"page_title": "Registeration",
 	"section_title": "Sign Up",
 	"login_link_text": "Alredy have account? Login now!",

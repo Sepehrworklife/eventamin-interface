@@ -1,11 +1,13 @@
-const nextTranslate = require('next-translate');
-
-module.exports = {
-  reactStrictMode: true,
-}
-
+const nextTranslate = require("next-translate");
 module.exports = nextTranslate({
-  webpack: (config, { isServer, webpack }) => {
-    return config;
-  }
-})
+	reactStrictMode: true,
+	eslint: {
+		ignoreDuringBuilds: true,
+	},
+	experimental: {
+		outputStandalone: true,
+	},
+	webpack: (config, { isServer, webpack }) => {
+		return config;
+	},
+});

@@ -38,6 +38,8 @@ const About = () => {
 				title={t("second_section.title")}
 				description={t("second_section.description")}
 				bgColor={firstBgColor}
+				firstLink="/directory"
+				secondLink="/register"
 				firstButtonText={t("second_section.register_button_text")}
 				secondButtonText={t("second_section.second_button_text")}
 			/>

@@ -1,4 +1,8 @@
 {
+	"seconds": "ثانیه",
+	"didnt_receive_email": "ایمیلی دریافت نکردید؟",
+	"check_spam": "لطفا پوشه اسپم خود را چک کنید",
+	"resend": "ارسال مجدد",
 	"page_title": "ثبت نام در سایت",
 	"section_title": "ثبت نام",
 	"login_link_text": "حساب کابری دارید؟ وارد شوید!",

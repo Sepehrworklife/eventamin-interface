@@ -1,0 +1,12 @@
+# docker-compose.prod.yml
+version: '3.8'
+
+
+services:
+  frontend:
+    build: .
+    ports:
+      - 4000:3000
+    command: node server.js
+
+  

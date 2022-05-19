@@ -11,6 +11,7 @@ import {
 	CircularProgress,
 	Snackbar,
 	Alert,
+	Box,
 } from "@mui/material";
 import Head from "next/head";
 import React from "react";
@@ -19,11 +20,16 @@ import useTranslation from "next-translate/useTranslation";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
+import { sendActivationEmail } from "../services/users";
 import { base } from "../services/users";
 
 const Register = (props) => {
+	const initialOtpCount = 5;
 	const { t } = useTranslation("register");
 	const [isLoading, setIsLoading] = React.useState(false);
+	const [otpCount, setOtpCount] = React.useState(initialOtpCount);
+	const [user, setUser] = React.useState([]);
+	const [resendOtp, setResendOtp] = React.useState(false);
 	const [snackbar, setSnackbar] = React.useState({
 		horizontal: "center",
 		vertical: "top",
@@ -31,6 +37,43 @@ const Register = (props) => {
 		message: null,
 		type: "error",
 	});
+
+	function startCount() {
+		const realSecond = otpCount;
+		let otp = setInterval(() => {
+			realSecond -= 1;
+			if (realSecond >= 0) {
+				setOtpCount((prevState) => prevState - 1);
+			}
+			if (realSecond < 0) {
+				clearInterval(otp);
+			}
+		}, [1000]);
+	}
+
+	async function sendOtpRequest() {
+		await sendActivationEmail(user.username, user.id, user.email)
+			.then((result) =>
+				setSnackbar({
+					open: true,
+					horizontal: "center",
+					vertical: "top",
+					message: "Verification email resended",
+					type: "success",
+				})
+			)
+			.catch((error) =>
+				setSnackbar({
+					open: true,
+					horizontal: "center",
+					vertical: "top",
+					message: "Something wrong please try again later.",
+					type: "error",
+				})
+			);
+		setOtpCount(initialOtpCount);
+		setTimeOut(() => startCount(), [500]);
+	}
 
 	const phoneRegExp =
 		/^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/;
@@ -60,15 +103,11 @@ const Register = (props) => {
 			username: Yup.string()
 				.max(32, t("validation:max", { field: "Username", num: "32" }))
 				.min(4, t("validation:min", { field: "Username", num: "4" }))
-				.required(
-					t("validation:field_required", { field: "Username" })
-				),
+				.required(t("validation:field_required", { field: "Username" })),
 			password: Yup.string()
 				.max(32, t("validation:max", { field: "Password", num: "32" }))
 				.min(6, t("validation:min", { field: "Password", num: "6" }))
-				.required(
-					t("validation:field_required", { field: "Password" })
-				),
+				.required(t("validation:field_required", { field: "Password" })),
 		}),
 		onSubmit: (values) => {
 			let payload = values;
@@ -77,23 +116,26 @@ const Register = (props) => {
 			request(payload).then(() =>
 				document.querySelector("#register-form").reset()
 			);
+			setResendOtp(true);
+			startCount();
 		},
 	});
 
 	const request = async (payload) => {
 		setIsLoading(true);
 		base("post", payload)
-			.then((result) =>
-				result.status === 201
-					? setSnackbar({
-							open: true,
-							horizontal: "center",
-							vertical: "top",
-							message: t("registered_success"),
-							type: "success",
-					  })
-					: null
-			)
+			.then((result) => {
+				if (result.status === 201) {
+					setSnackbar({
+						open: true,
+						horizontal: "center",
+						vertical: "top",
+						message: t("registered_success"),
+						type: "success",
+					});
+					setUser(result.data.user);
+				}
+			})
 			.catch((error) =>
 				error.response.status === 406
 					? setSnackbar({
@@ -118,8 +160,8 @@ const Register = (props) => {
 		<>
 			<Head>
 				<title>{t("head:register.title")}</title>
-				<meta name="description" content={t("head:register.description")}/>
-				<meta name="keywords" content={t("head:register.keywords")}/>
+				<meta name="description" content={t("head:register.description")} />
+				<meta name="keywords" content={t("head:register.keywords")} />
 			</Head>
 			<Snackbar
 				open={snackbar.open}
@@ -159,16 +201,9 @@ const Register = (props) => {
 								{t("section_title")}
 							</Typography>
 							<Divider light sx={{ my: 2 }} />
-							<form
-								onSubmit={formik.handleSubmit}
-								id="register-form"
-							>
+							<form onSubmit={formik.handleSubmit} id="register-form">
 								<TextField
-									error={
-										formik.errors.name &&
-										formik.touched.name &&
-										true
-									}
+									error={formik.errors.name && formik.touched.name && true}
 									helperText={
 										formik.errors.name &&
 										formik.touched.name &&
@@ -188,9 +223,7 @@ const Register = (props) => {
 								<TextField
 									dir="rtl"
 									error={
-										formik.errors.name_fa &&
-										formik.touched.name_fa &&
-										true
+										formik.errors.name_fa && formik.touched.name_fa && true
 									}
 									helperText={
 										formik.errors.name_fa &&
@@ -208,14 +241,9 @@ const Register = (props) => {
 									fullWidth
 								/>
 								<TextField
-									error={
-										formik.errors.phone &&
-										formik.touched.phone &&
-										true
-									}
+									error={formik.errors.phone && formik.touched.phone && true}
 									helperText={
-										formik.errors.phone &&
-										formik.touched.phone
+										formik.errors.phone && formik.touched.phone
 											? formik.errors.phone
 											: t("phone_helper_text")
 									}
@@ -231,11 +259,7 @@ const Register = (props) => {
 									required
 								/>
 								<TextField
-									error={
-										formik.errors.email &&
-										formik.touched.email &&
-										true
-									}
+									error={formik.errors.email && formik.touched.email && true}
 									helperText={
 										formik.errors.email &&
 										formik.touched.email &&
@@ -254,9 +278,7 @@ const Register = (props) => {
 								/>
 								<TextField
 									error={
-										formik.errors.username &&
-										formik.touched.username &&
-										true
+										formik.errors.username && formik.touched.username && true
 									}
 									helperText={
 										formik.errors.username &&
@@ -277,9 +299,7 @@ const Register = (props) => {
 
 								<TextField
 									error={
-										formik.errors.password &&
-										formik.touched.password &&
-										true
+										formik.errors.password && formik.touched.password && true
 									}
 									helperText={
 										formik.errors.password &&
@@ -308,6 +328,21 @@ const Register = (props) => {
 									{t("submit_button_text")}
 								</Button>
 							</form>
+							{resendOtp && (
+								<Box sx={{ my: 2 }}>
+									<Typography>
+										{t("didnt_receive_email")}{" "}
+										<Button
+											size="sm"
+											onClick={sendOtpRequest}
+											disabled={otpCount !== 0 ? true : false}
+										>
+											{otpCount === 0 ? t("resend") : otpCount + t("seconds")}
+										</Button>{" "}
+									</Typography>
+									<Typography>{t("check_spam")}</Typography>
+								</Box>
+							)}
 						</CardContent>
 						<CardActions className={styles.cardAction}>
 							<Link href="/login" passHref>
