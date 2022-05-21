@@ -1,6 +1,6 @@
 {
 	"authCode": "",
-	"url": "http://127.0.0.1:8000/api/v1/",
+	"url": "https://backdrop.eventamin.com/api/v1/",
 	"token": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJfY2xpZW50IjoiZHM4MzJUWDdUOXFkVndCanp0VmlhSUVteDlJYlpHU3hJT2Rndjd4UENOS25nS2tCUzhCYjduVDJ3bWlSQUY2S1FUK1lKUUhSdXkveE81Nm1reEJKMVE9PSIsImV4cCI6MTcxNjAxMzA5MH0.geun42xUKkUo5-B5LH7M7BwiN88bf3SszZ_EIrBGM10",
 	"authHeader": {
 		"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWJfY2xpZW50IjoiZHM4MzJUWDdUOXFkVndCanp0VmlhSUVteDlJYlpHU3hJT2Rndjd4UENOS25nS2tCUzhCYjduVDJ3bWlSQUY2S1FUK1lKUUhSdXkveE81Nm1reEJKMVE9PSIsImV4cCI6MTcxNjAxMzA5MH0.geun42xUKkUo5-B5LH7M7BwiN88bf3SszZ_EIrBGM10",
