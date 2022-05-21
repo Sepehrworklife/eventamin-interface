@@ -8,5 +8,6 @@ services:
     ports:
       - 4000:3000
     command: node server.js
+    restart: always
 
   

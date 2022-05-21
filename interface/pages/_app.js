@@ -1,4 +1,5 @@
 import "../styles/global.scss";
+import Script from "next/script";
 import NextNprogress from "nextjs-progressbar";
 import React from "react";
 import useTranslation from "next-translate/useTranslation";
@@ -16,6 +17,7 @@ import rtlPlugin from "stylis-plugin-rtl";
 import { CacheProvider } from "@emotion/react";
 import createCache from "@emotion/cache";
 import RFPProvider from "../contexts/app-rfp-provider";
+import Head from "next/head";
 
 // _app.js
 
@@ -43,7 +45,6 @@ const MyApp = ({ Component, pageProps }) => {
 		}
 	}, [isDark, lang]);
 
-
 	if (lang === "fa")
 		return (
 			<>
@@ -58,6 +59,19 @@ const MyApp = ({ Component, pageProps }) => {
 								showOnShallow={true}
 							/>
 							<CssBaseline />
+							<Script
+								strategy="lazyOnload"
+								src="https://www.googletagmanager.com/gtag/js?id=G-CRDYPGD89B"
+							></Script>
+							<Script id="google-analytics" strategy="lazyOnload">
+								{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CRDYPGD89B');
+	`}
+							</Script>
 							<Component {...pageProps} />
 						</RFPProvider>
 					</ThemeProvider>
@@ -76,7 +90,21 @@ const MyApp = ({ Component, pageProps }) => {
 						height={8}
 						showOnShallow={true}
 					/>
+
 					<CssBaseline />
+					<Script
+						strategy="lazyOnload"
+						src="https://www.googletagmanager.com/gtag/js?id=G-CRDYPGD89B"
+					></Script>
+					<Script id="google-analytics" strategy="lazyOnload">
+						{`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CRDYPGD89B');
+	`}
+					</Script>
 					<Component {...pageProps} rfp={rfp} setRfp={setRfp} />
 				</RFPProvider>
 			</ThemeProvider>

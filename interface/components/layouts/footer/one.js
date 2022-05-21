@@ -17,7 +17,7 @@ export const FooterOne = () => {
 	return (
 		<Box id={styles.footer}>
 			<Typography variant="body2" component="p" textAlign="center">
-				{lang === "fa" ? "تمامی حقوق متعلق به اوینتامین است" : "Copyright Reserved | Eventamin"}
+				{lang === "fa" ? "تمامی حقوق متعلق به ایونتامین است" : "Copyright Reserved | Eventamin"}
 			</Typography>
 		</Box>
 	);

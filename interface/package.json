@@ -31,6 +31,7 @@
     "react-material-ui-carousel": "^3.2.0",
     "react-perf-devtool": "^3.1.8",
     "sass": "^1.45.2",
+    "sharp": "^0.30.4",
     "stylis": "^4.0.13",
     "stylis-plugin-rtl": "^2.1.1",
     "use-dark-mode": "^2.3.1",

@@ -24,7 +24,7 @@ import { sendActivationEmail } from "../services/users";
 import { base } from "../services/users";
 
 const Register = (props) => {
-	const initialOtpCount = 5;
+	const initialOtpCount = 120;
 	const { t } = useTranslation("register");
 	const [isLoading, setIsLoading] = React.useState(false);
 	const [otpCount, setOtpCount] = React.useState(initialOtpCount);

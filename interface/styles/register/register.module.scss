@@ -1,14 +1,10 @@
 .container {
-	margin-top: 5vh;
-	margin-bottom: 5vh;
-	@media screen and(min-width: 600px) {
 		margin-top: 0;
 		margin-bottom: 0;
 		height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-	}
 }
 
 
@@ -24,7 +20,7 @@
 
 @media screen and(min-width: 600px) {
 	.background {
-		background-image: url("http://localhost:4000/uploads/images/exhibiton1.jpg");
+		background-image: url("https://eventamin.com/uploads/images/exhibiton1.jpg");
 		background-size: cover;
 		background-position: center;
 		width: 100%;
