@@ -1,10 +1,10 @@
 {
-	"page_title": "Search",
-	"page_description": "Description",
+	"page_title": "جستجو",
+	"page_description": "در بین هزاران تامین کننده جستجو کنید",
 	"company": {
 		"hero":{
-			"head": "Search",
-			"sub_head": "Providers are waiting for you"
+			"head": "جستجو",
+			"sub_head": "تامین کنندگان منتظر درخواست شما هستند"
 		}
 	}
 }

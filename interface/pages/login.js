@@ -16,6 +16,7 @@ import Head from "next/head";
 import React from "react";
 import styles from "../styles/login/login.module.scss";
 import useTranslation from "next-translate/useTranslation";
+import Image from 'next/image';
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Link from "next/link";
@@ -151,6 +152,17 @@ const Login = (props) => {
 			</Backdrop>
 			<div className={styles.background}>
 				<Container maxWidth="sm" className={styles.container}>
+<p style={{textAlign: "center", marginTop: "2rem"}}>
+						<Link href="/">
+							<Image
+								src="/uploads/images/logo.png"
+								alt="Eventamin"
+								height="100"
+								width="100"
+								style={{margin: "auto"}}
+							/>
+							</Link>
+							</p>
 					<Card className={styles.card}>
 						<CardContent>
 							<Typography variant="h4" component="h2">

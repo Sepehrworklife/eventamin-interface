@@ -13,5 +13,28 @@
 		"title": "Who is Eventamin?",
 		"description": "Eventamin means Event & Exhibition Support and is one of the leading global directories for the Event & Exhibition industry. We provide an ever growing network which is characterised by transparency and quality. Eventamin does not just increasing exposure for suppliers but also makes information readily available to buyers. Find Supplier in more than 180 countries or be found as Organisers, Booth Builders, event Hals or any other provider!",
 		"find_out_button": "Find Out More"
+	},
+	"footer": {
+		"section_one": {
+			"title": "Directory",
+			"iran": "Republic Islamic of Iran",
+			"azerbaijan": "Azerbaijan",
+			"turkey": "Turkey",
+			"china": "China"
+		},
+		"section_two": {
+			"title": "Additional Links",
+			"home": "Home",
+			"about": "About us",
+			"contact": "Contact us",
+			"news": "News"
+		},
+		"section_three": {
+			"title": "Social",
+			"instagram": "Instagram",
+			"twitter": "Twitter",
+			"linkedin": "Linkedin"
+		}
 	}
 }
+

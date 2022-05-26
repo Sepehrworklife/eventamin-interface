@@ -162,8 +162,8 @@ export const ProductCard = ({
 														);
 													})}
 												</Grid>
-												<Grid item xs={12} sm={3}>
-													<img src={Api.url + logo} height="70"/>
+												<Grid item xs={12} sm={3} sx={{overflow: "hidden"}}>
+													<img src={Api.url + logo} height="70" />
 												</Grid>
 											</Grid>
 											<Divider sx={{ my: 2 }} />

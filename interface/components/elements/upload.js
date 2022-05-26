@@ -9,7 +9,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import useTranslation from "next-translate/useTranslation";
 import React from "react";
 import { upload } from "../../services/uploads";
-import {FileUpload} from "@mui/icons-material";
+import { FileUpload } from "@mui/icons-material";
 
 const UploadField = (props) => {
 	const [helper, setHelper] = React.useState({
@@ -22,7 +22,7 @@ const UploadField = (props) => {
 	const [progress, setProgress] = React.useState(0);
 	const { t } = useTranslation("validation");
 
-	const onChange = (e) => {
+	const onChange = async (e) => {
 		e.preventDefault();
 		setIsLoading(true);
 		setProgress(0);
@@ -49,51 +49,56 @@ const UploadField = (props) => {
 			});
 			return;
 		}
-		Array.from(files).forEach(async (file) => {
-			if (!props.fileType.includes(file.type)) {
-				setHelper({
-					message: t("file_upload_type_error", {
-						types: props.fileType.toString(),
-					}),
-					buttonColor: "error",
-					error: true,
-				});
-				error = true;
-				return;
-			}
-			if (file.size > props.fileSize * 10 ** 6) {
-				setHelper({
-					message: t("file_upload_size_error", {
-						size: props.fileSize * 10 ** 3,
-					}),
-					error: true,
-					buttonColor: "error",
-				});
-				error = true;
-				return;
-			}
-			await upload(file)
-				.then((result) => {
-					uploads.push(result.data);	
-				})
-				.catch((error) => {
+		var waitUntilUpload = new Promise((resolve, reject) => {
+			Array.from(files).forEach(async (file, index) => {
+				if (!props.fileType.includes(file.type)) {
 					setHelper({
-						message: t("something_wrong"),
+						message: t("file_upload_type_error", {
+							types: props.fileType.toString(),
+						}),
+						buttonColor: "error",
+						error: true,
+					});
+					error = true;
+					return;
+				}
+				if (file.size > props.fileSize * 10 ** 6) {
+					setHelper({
+						message: t("file_upload_size_error", {
+							size: props.fileSize * 10 ** 3,
+						}),
 						error: true,
 						buttonColor: "error",
 					});
 					error = true;
 					return;
-				});
+				}
+				await upload(file)
+					.then((result) => {
+						uploads.push(result.data);
+					})
+					.catch((error) => {
+						setHelper({
+							message: t("something_wrong"),
+							error: true,
+							buttonColor: "error",
+						});
+						error = true;
+						return;
+					});
+				if (index === files.length - 1) resolve();
+			});
 		});
-		clearInterval(timer);
-		setProgress(100);
-		setTimeout(() => {
-			setIsLoading(false);
-		}, 300);
-		if (error) return;
-		setIsComplete(true);
-		props.setUpload(uploads);
+		waitUntilUpload.then(() => {
+			clearInterval(timer);
+			setProgress(100);
+			setTimeout(() => {
+				setIsLoading(false);
+			}, 300);
+			if (error) return;
+			setIsComplete(true);
+			props.setUpload(uploads);
+		});
 	};
 
 	return (

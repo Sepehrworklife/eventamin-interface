@@ -496,6 +496,9 @@ const New = () => {
 												{formik.errors.logo}
 											</FormHelperText>
 										) : null}
+											<FormHelperText>
+												{t("new.logo_suggest")}
+											</FormHelperText>
 									</Grid>
 								</Grid>
 							</form>

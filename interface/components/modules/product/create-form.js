@@ -48,8 +48,13 @@ const CreateForm = () => {
 		await fetchDestinationByUser(auth.getUserData().id)
 			.then((result) => setListOfDestinations(result.data))
 			.catch((error) => {
-				alert("Something Wrong Please Try Again");
-				router.push("/account/product");
+				if(lang === "fa") {
+				alert("لطفا ابتدا از قسمت مقصد ها، مقصد درست بفرمایید");
+				}
+				else {
+					alert("You have no destinations, please create one first.")
+				}
+				router.push('/account/product')
 			});
 		setIsLoading(false);
 	};
