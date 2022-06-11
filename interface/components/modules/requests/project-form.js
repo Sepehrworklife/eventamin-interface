@@ -205,7 +205,7 @@ const ProjectForm = ({
 				</Grid>
 
 				<Grid item>
-					<Button color="primary" size="large" onClick={formik.submitForm}>
+					<Button color="primary" variant="contained" size="large" onClick={formik.submitForm}>
 						{t("common:next")}
 					</Button>
 				</Grid>

@@ -151,9 +151,9 @@ export const FooterOne = () => {
 								</ListItemIcon>
 								<ListItemText
 									primary={
-										<Link href="#">
+										<a href="https://instagram.com/eventamin.cam?r=nametag" target="_blank">
 											{t("footer.section_three.instagram")}
-										</Link>
+										</a>
 									}
 								/>
 							</ListItem>

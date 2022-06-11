@@ -16,7 +16,7 @@ export const ProductsList = ({ products = [] }) => {
 					attachments = product.attachments.split(",");
 				if (product.destinations !== "" && product.destinations !== null) {
 					product.destinations.map((destination, index) => {
-						countries.push(destination.country);
+						countries.push(destination?.country);
 					});
 				}
 

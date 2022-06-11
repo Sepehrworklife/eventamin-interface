@@ -16,7 +16,7 @@ export const SectionOne = () => {
 				<Grid container spacing={4}>
 					<Grid item md={6} order={{xs:2}}>
 						<Typography
-							variant="h4"
+							variant="h5"
 							component="p"
 							className={styles.title}
 							marginBottom={2}

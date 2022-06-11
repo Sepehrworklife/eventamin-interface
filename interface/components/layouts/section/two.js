@@ -24,6 +24,7 @@ export const SectionTwo = () => {
 					variant="h4"
 					component="p"
 					className={styles.title}
+					textAlign="center"
 					marginBottom={2}
 				>
 					{t("section_two.title")}

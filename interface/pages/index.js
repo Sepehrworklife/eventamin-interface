@@ -12,6 +12,7 @@ import useDarkMode from "use-dark-mode";
 import {grey} from '@mui/material/colors';
 import {BuyersVsProviders} from '../components/layouts/section/buyers-vs-providers';
 import useTranslation from 'next-translate/useTranslation';
+import {StatCounter} from '../components/layouts/counter/stat-counter';
 
 export default function Home() {
 	const { value: isDark } = useDarkMode();
@@ -37,6 +38,7 @@ export default function Home() {
 			<SectionOne />
 			<CtaRegister />
 			<SectionTwo />
+			<StatCounter />
 			<Grow />
 			<BuyersVsProviders bgColor={firstBgColor} />
 			<FooterOne />

@@ -161,6 +161,7 @@ const Account = () => {
 											<DestinationResultTable
 												pageSize={5}
 												rowsPerPageOptions={[5]}
+												disabledButton={() => console.log(1)}
 											/>
 										</CardContent>
 										<CardActions>

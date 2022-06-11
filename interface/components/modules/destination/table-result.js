@@ -42,6 +42,7 @@ export function ResultTable(props) {
 				city: obj.city,
 			});
 		});
+		if(preparedData.length >= 2) props.disabledButton(true);
 		setData(preparedData);
 		setIsLoading(false);
 	};

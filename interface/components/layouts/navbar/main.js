@@ -7,8 +7,7 @@ import Hidden from "@mui/material/Hidden";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
+import Menu from "@mui/material/Menu"; import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
@@ -22,6 +21,7 @@ import Authenticate from "../../../utils/authenticate";
 import useTranslation from "next-translate/useTranslation";
 const Api = require("../../../constants/api.json");
 import setLanguage from 'next-translate/setLanguage'
+import {orange} from "@mui/material/colors";
 
 const MainNavbar = () => {
 	const auth = new Authenticate();
@@ -245,7 +245,7 @@ const MainNavbar = () => {
 							{user && (
 								<Tooltip title="Open settings">
 									<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-										<Avatar alt={user.name} src={Api.url + user.logo} />
+										<Avatar sx={{ bgcolor: orange[600] }}></Avatar>
 									</IconButton>
 								</Tooltip>
 							)}
