@@ -19,6 +19,11 @@
 	.item:hover .icon {
 		color: #1976d2;
 	}
+	& .image {
+		max-width: 100%;
+		width: 1200px;
+		border-radius: 20px;
+	}
 
 	@media only screen and (max-width:600px){
 		.item {

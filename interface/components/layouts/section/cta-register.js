@@ -12,7 +12,7 @@ export const CtaRegister = (props) => {
 	return (
 		<Box id={styles.cta_register_container}>
 			<Box className={styles.container_content}>
-				<Typography align="center" variant="h4" component="p">
+				<Typography align="center" variant="h5" component="p" marginBottom={4}>
 					{t("cta_register.title")}
 				</Typography>
 				<Box className={styles.buttons}>

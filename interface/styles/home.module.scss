@@ -1,5 +1,5 @@
 #main_hero {
-	background-image: url(https://eventamin.com/uploads/images/exhibition2.jpg);
+	background-image: url(http://eventamin.com:4000/uploads/images/exhibition2.jpg);
 	min-height: 400px;
 	background-size: cover;
 	background-position: center;
@@ -51,6 +51,9 @@
 	}
 
 	& .image {
+		border-radius: 20px;
+		width: 500px;
+		max-width: 100%;
 		@media screen and (max-width: 900px) {
 			display: none;
 		}
@@ -69,6 +72,7 @@
 	padding: 2rem;
 	margin-top: auto;
 
+
 	a {
 		color: #f2f2f2f2;
 		text-decoration: none;
@@ -78,4 +82,21 @@
 		}
 	}
 
+
+	& .footer_social {
+		display: flex;
+		gap: 2rem;
+		margin-top: 2rem;
+
+		& a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: #ffc107;
+			}
+		}
+		& svg {
+			font-size: 3rem;
+		}
+	}
 }

@@ -2,6 +2,7 @@ import * as React from "react";
 import TranslateIcon from "@mui/icons-material/Translate";
 import Image from "next/image";
 import AppBar from "@mui/material/AppBar";
+import Link from 'next/link';
 import Box from "@mui/material/Box";
 import Hidden from "@mui/material/Hidden";
 import Toolbar from "@mui/material/Toolbar";
@@ -69,7 +70,7 @@ const MainNavbar = () => {
 	}, []);
 	return (
 		<>
-			<AppBar position="static">
+			<AppBar position="static" sx={{bgcolor: '#222'}}>
 				<Container maxWidth="xl">
 					<Toolbar disableGutters>
 						<Box

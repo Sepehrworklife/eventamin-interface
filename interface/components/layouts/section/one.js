@@ -39,7 +39,15 @@ export const SectionOne = () => {
 						</Button>
 					</Grid>
 					<Grid item md={6} order={{xs: 1, md: 2 }} className={styles.flex_center}>
-						<img src={MockUpImage.src} className={styles.image} style={{maxWidth: "400px"}}/>
+						{lang === "fa" ? (
+						<a href="https://www.gostaresh.news/%D8%A8%D8%AE%D8%B4-%D9%86%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-20" target="_blank">
+						<img src="/uploads/images/advertise/1.gif" className={styles.image} />
+					</a>
+						) : (
+						<a href="https://www.exhibitionworld.co.uk/" target="_blank">
+						<img src="/uploads/images/advertise/0.gif" className={styles.image} />
+					</a>
+						)}
 					</Grid>
 				</Grid>
 			</Container>

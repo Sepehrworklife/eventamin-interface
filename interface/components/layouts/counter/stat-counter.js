@@ -1,10 +1,26 @@
 import style from "../../../styles/layout/stat-counter.module.scss";
+import React from 'react';
 import { Box, Container, Grid, Typography } from "@mui/material";
 import CountUp from "react-countup";
 import useTranslation from "next-translate/useTranslation";
 
 export const StatCounter = () => {
   const { t } = useTranslation("layouts");
+	const counterRef = React.useRef();
+	const [startCounter, setStartCounter] = React.useState(false);
+
+
+	React.useEffect(() => {
+		const observer = new IntersectionObserver((entries) => {
+			const entry = entries[0];
+			if (entry.isIntersecting) {
+				setStartCounter(true);
+				observer.disconnect();
+			}
+		})
+		observer.observe(counterRef.current);
+
+	}, []);
   const items = [
     {
       number: t("counter.first.count"),
@@ -27,10 +43,10 @@ export const StatCounter = () => {
     },
   ];
   return (
-    <Box className={style.stat_counter_container}>
+    <Box className={style.stat_counter_container} ref={counterRef}>
       <Container maxWidth="xl">
         <Grid container>
-          {items.map((item, index) => {
+          {startCounter && items.map((item, index) => {
             return (
               <Grid
                 item
@@ -46,7 +62,7 @@ export const StatCounter = () => {
                 }}
               >
                 <Typography variant="h1" component="p" color="white">
-                  <CountUp start={0} end={item.number} duration={2} />
+                  <CountUp start={0} end={item.number} duration={5} />
                 </Typography>
                 <Typography
                   variant="h6"
