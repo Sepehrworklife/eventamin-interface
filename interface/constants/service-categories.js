@@ -94,5 +94,14 @@ export const services = [
 		fa: "تورها و خدمات سفر",
 		en: "Business Tours"
 	},
-
+	{
+		code: 20,
+		fa: "رسانه",
+		en: "Press"
+	},
+	{
+		code: 21,
+		fa: "محتوا و تبلیغات",
+		en: "Media & Ad"
+	},
 ]

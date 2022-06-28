@@ -10,7 +10,7 @@ export const Hero = () => {
 
 	return (
 		<Grid container id={styles.main_hero}>
-			<Container maxWidth="sm" id={styles.main_hero_container}>
+			<Container maxWidth="md" id={styles.main_hero_container}>
 					<Typography variant="h2" component="h2">{t("hero.title")}
 					</Typography>
 					<Typography variant="h5" component="p">

@@ -29,6 +29,9 @@
 	"no_record": "نتیجه ای یافت نشد.",
 	"search_country_text": "جستجو بر اساس کشور",
 	"search_company_text": "جستجو بر اساس نام شرکت",
+	"company": "شرکت",
+	"country": "کشور",
+	"category": "دسته بندی",
 
 	"appbar": {
 		"directory": "فهرست",

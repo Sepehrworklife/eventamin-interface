@@ -77,5 +77,4 @@ export const searchUser = async(payload) => {
 	let config = {headers: Api.authHeader, params: payload};
 	const res = await axios.get(endpoint, config);
 	return res;
-	
 }

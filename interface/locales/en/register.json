@@ -1,11 +1,11 @@
 {
 	"seconds": "s",
-	"didnt_receive_email": "Didnt recieve any email?",
+	"didnt_receive_email": "Didn't recieve any email?",
 	"check_spam": "Please check your spam folder.",
 	"resend": "Resend",
 	"page_title": "Registeration",
 	"section_title": "Sign Up",
-	"login_link_text": "Alredy have account? Login now!",
+	"login_link_text": "Alredy have an account? Login now!",
 	"home_link_text": "Get back to Homepage",
 	"submit_button_text": "Register",
 	"input_name": "Full Name",
@@ -14,7 +14,7 @@
 	"input_email": "Email",
 	"input_password": "Password",
 	"input_username": "Username",
-	"phone_helper_text": "Includes country code.",
+	"phone_helper_text": "Include country code.",
 	"unique_entry_exists_error": "Phone, Email or Username already exists.",
 	"registered_success": "Please verify your account by checking your email."
 }

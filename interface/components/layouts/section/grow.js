@@ -37,7 +37,7 @@ export const Grow = (props) => {
 				<Grid container className={styles.grow_flex}>
 					<Grid className={styles.item}>
 						<Typography align="center" variant="h2" component="div">
-							<ScreenSearchDesktopTwoToneIcon fontSize="lg" color="success" />
+							<ScreenSearchDesktopTwoToneIcon fontSize="lg" color="secondary" />
 						</Typography>
 						<Typography align="center" variant="h6" component="h5">
 							{t("grow.directory.title")}
@@ -56,7 +56,7 @@ export const Grow = (props) => {
 					</Divider>
 					<Grid className={styles.item}>
 						<Typography align="center" variant="h2" component="div">
-							<AssignmentIndTwoToneIcon fontSize="lg" color="success" />
+							<AssignmentIndTwoToneIcon fontSize="lg" color="secondary" />
 						</Typography>
 						<Typography align="center" variant="h6" component="h5">
 							{t("grow.profile.title")}
@@ -97,7 +97,7 @@ export const Grow = (props) => {
 					</Divider>
 					<Grid className={styles.item}>
 						<Typography align="center" variant="h2" component="div">
-							<NextWeekTwoToneIcon fontSize="lg" color="success" />
+							<NextWeekTwoToneIcon fontSize="lg" color="secondary" />
 						</Typography>
 						<Typography align="center" variant="h6" component="h5">
 							{t("grow.search.title")}
@@ -119,7 +119,7 @@ export const Grow = (props) => {
 					<Grid className={styles.break}></Grid>
 					<Grid className={styles.item}>
 						<Typography align="center" variant="h2" component="div">
-							<TimelapseTwoToneIcon fontSize="lg" color="success" />
+							<TimelapseTwoToneIcon fontSize="lg" color="secondary" />
 						</Typography>
 						<Typography align="center" variant="h6" component="h5">
 							{t("grow.rfp.title")}

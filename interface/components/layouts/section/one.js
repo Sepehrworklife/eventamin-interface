@@ -12,9 +12,9 @@ export const SectionOne = () => {
 
 	return (
 		<Grid id={styles.section_one}>
-			<Container maxWidth="md">
+			<Container maxWidth="lg">
 				<Grid container spacing={4}>
-					<Grid item md={6} order={{xs:2}}>
+					<Grid item md={9} order={{xs:2}}>
 						<Typography
 							variant="h5"
 							component="p"
@@ -38,7 +38,7 @@ export const SectionOne = () => {
 							{t("section_one.contact_button")}
 						</Button>
 					</Grid>
-					<Grid item md={6} order={{xs: 1, md: 2 }} className={styles.flex_center}>
+					<Grid item md={3} order={{xs: 1, md: 2 }} className={styles.flex_center}>
 						{lang === "fa" ? (
 						<a href="https://www.gostaresh.news/%D8%A8%D8%AE%D8%B4-%D9%86%D9%85%D8%A7%DB%8C%D8%B4%DA%AF%D8%A7%D9%87-20" target="_blank">
 						<img src="/uploads/images/advertise/1.gif" className={styles.image} />

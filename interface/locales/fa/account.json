@@ -12,7 +12,7 @@
 	"destination_text_link": "مدیریت مقصد ها",
 	"destination_card_title": "مقصد ها",
 	"upgrade_now_title": "همین حالا اکانت خود را ارتقا دهید!",
-	"upgrade_now_desc": "با ارتقا حساب کاربری، مقصد ها و محصولات یا خدمات شما در صدر جستجو ها نمایش داده خواهد شد.",
+	"upgrade_now_desc": "با ارتقا حساب کاربری، محصولات و خدمات در صدر لیست نتیجه جستجو ها نمایش داده خواهد شد.",
 	"upgrade_now_link": "ارتقا دهید",
 	"product_card_title": "محصولات/خدمات",
 	"product_text_link": "مدیریت محصولات/خدمات",
@@ -32,7 +32,7 @@
 		"field_address_fa": "آدرس",
 		"field_city": "شهر",
 		"initial_data": "اطلاعات اولیه",
-		"provider_data": "اطلاعات ارائه دهندگان",
+		"provider_data": "اطلاعات تامین کنندگان",
 		"field_short_description": "توضیحات مختصر",
 		"field_description": "توضیحات کامل",
 		"field_offers": "پیشنهادات",
@@ -127,7 +127,7 @@
 	},
 	"profile": {
 		"providerform": {
-			"title": "اطلاعات ارائه دهندگان",
+			"title": "اطلاعات تامین کنندگان",
 			"input_description": "توضیحات",
 			"input_short_description": "توضیحات مختصر",
 			"input_offers": "پیشنهادات",

@@ -19,7 +19,7 @@ export const SectionTwo = () => {
 
 	return (
 		<Grid container id={styles.section_two} sx={{ backgroundColor: bgColor }}>
-			<Container maxWidth="md">
+			<Container maxWidth="lg">
 				<Typography
 					variant="h4"
 					component="p"
@@ -34,6 +34,7 @@ export const SectionTwo = () => {
 					component="p"
 					className={styles.description}
 					marginBottom={4}
+					textAlign="center"
 				>
 					{t("section_two.description")}
 				</Typography>

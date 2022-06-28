@@ -25,3 +25,9 @@ export const convertLanguages = (listOfLanguages) => {
 	})
 	return list
 }
+
+
+export const isStringPersian = (string) => {
+	const persianRegex = /^[\u0600-\u06FF\s]+$/;
+	return persianRegex.test(string);
+}

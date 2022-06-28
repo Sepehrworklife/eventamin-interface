@@ -27,7 +27,7 @@ export const FooterOne = () => {
   const [secondBgColor, setSecondBgColor] = React.useState(null);
 
   React.useEffect(() => {
-    isDark ? setBgColor(grey[1000]) : setBgColor("#006699");
+    isDark ? setBgColor(grey[900]) : setBgColor(grey[900]);
   }, [isDark]);
   return (
     <Box
@@ -195,7 +195,7 @@ export const FooterOne = () => {
         color="white"
       >
         {lang === "fa"
-          ? "تمامی حقوق متعلق به اوینتامین است"
+          ? "تمامی حقوق متعلق به ایونتامین است"
           : "Copyright Reserved | Eventamin"}
       </Typography>
     </Box>

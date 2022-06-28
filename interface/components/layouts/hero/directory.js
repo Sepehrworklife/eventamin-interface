@@ -11,13 +11,13 @@ export const DirectoryHero = (props) => {
 	return (
 		<Grid container id={styles.directory_hero}>
 			<Container maxWidth="md" id={styles.main_hero_container}>
-				<Search />
 				<Typography variant="h4" component="h2" sx={{mt:4}}>
 					{props.head}
 				</Typography>
 				<Typography variant="h5" component="p">
 					{props.subHead}
 				</Typography>
+				<Search />
 			</Container>
 		</Grid>
 	);

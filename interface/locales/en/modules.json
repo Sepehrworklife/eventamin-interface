@@ -5,7 +5,7 @@
 		"project_request_button": "Project Request"
 	},
 	"requests": {
-		"success": "Request sended successfully",
+		"success": "Request sent successfully",
 		"error": "Request send failed, Please try again later.",
 		"contactform": {
 			"title": "Contact Information",

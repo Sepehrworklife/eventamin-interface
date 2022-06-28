@@ -29,6 +29,9 @@
 	"no_record": "There is no record to display",
 	"search_country_text": "Explore by Country",
 	"search_company_text": "Explore by Company Name",
+	"company": "Company",
+	"country": "Country",
+	"category": "Category",
 
 	"appbar": {
 		"directory": "Directory",
