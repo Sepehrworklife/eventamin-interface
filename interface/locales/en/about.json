@@ -13,13 +13,24 @@
 		"second_button_text": "Explore Our Directory",
 		"register_button_text": "Register Now"
 	},
+	"purpose": {
+		"title": "Our Purpose",
+		"description": "To represent the event supplier and services community by delivering value to buyers in order to support their continuous improvement and success. Create a sector that gains its strength from unity.\nWe represent\nWe lead\nWe are stronger together\nWe bring value\nWe enable users to do it better\n\nOur Values\n\nHonest\nCollaborative\nOpen & Inclusive\nProactive"
+	},
 	"contact": {
+		"form": {
+			"email": "Email",
+			"title": "Title",
+			"message": "Message",
+			"success": "Message sent."
+		},
+		"title": "Contact Us",
 		"sub_head": "Keep in Touch with Us",
 		"email_title": "Email",
 		"email": "info@eventamin.com",
 		"phone_title": "Phone",
-		"phone": "+98 211232131",
+		"phone": "+98 9934455007",
 		"address_title": "Address",
-		"address": "Iran, Tehran, Innovation & Entrepreneurship Center"
+		"address": "Tehran, Iran"
 	}
 }

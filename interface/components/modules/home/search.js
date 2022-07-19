@@ -2,6 +2,10 @@ import Link from "next/link";
 import {
   Paper,
   IconButton,
+  Select,
+  InputLabel,
+  MenuItem,
+  FormControl,
   InputBase,
   Divider,
   Autocomplete,
@@ -40,30 +44,37 @@ export const Search = (props) => {
   }
 
   return (
-    <Box sx={{my: 3, bgcolor: 'rgba(0,0,0,.6)', borderRadius: '.5rem', padding: '1rem'}}>
+    <Box
+      sx={{
+        my: 3,
+        bgcolor: "rgba(0,0,0,.6)",
+        borderRadius: ".5rem",
+        padding: "1rem",
+      }}
+    >
       <ButtonGroup
         variant="contained"
         aria-label="outlined button group"
         size="large"
-        sx={{ display: "flex", justifyContent: "center",  boxShadow: 0 }}
+        sx={{ display: "flex", justifyContent: "center", boxShadow: 0 }}
       >
         <Button
           color={state === "company" ? "secondary" : "info"}
           onClick={(e) => handleClick(e, "company")}
         >
-					{t("common:company")}
+          {t("common:company")}
         </Button>
         <Button
           color={state === "country" ? "secondary" : "info"}
           onClick={(e) => handleClick(e, "country")}
         >
-					{t("common:country")}
+          {t("common:country")}
         </Button>
         <Button
           color={state === "category" ? "secondary" : "info"}
           onClick={(e) => handleClick(e, "category")}
         >
-					{t("common:category")}
+          {t("common:category")}
         </Button>
       </ButtonGroup>
       {(state === "company" || state === "country") && (
@@ -95,7 +106,9 @@ export const Search = (props) => {
               onChange={(e, value) => {
                 router.push("/search/country/" + value?.code.toLowerCase());
               }}
-              getOptionLabel={(option) => option.label}
+              getOptionLabel={(option) =>
+                lang === "fa" ? option.persian : option.label
+              }
               renderOption={(props, option) => (
                 <Box
                   component="li"
@@ -110,11 +123,12 @@ export const Search = (props) => {
                   <img
                     loading="lazy"
                     width="20"
-                    src={`https://flagcdn.com/w20/${option.code.toLowerCase()}.png`}
+                    src={`https://flagcdn.com/w19/${option.code.toLowerCase()}.png`}
                     srcSet={`https://flagcdn.com/w40/${option.code.toLowerCase()}.png 2x`}
                     alt=""
                   />
-                  {option.label} ({option.code}) +{option.phone}
+                  {lang === "fa" ? option.persian : option.label} |{" "}
+                  {`+${option.phone}`}
                 </Box>
               )}
               renderInput={(params) => {
@@ -150,14 +164,27 @@ export const Search = (props) => {
       )}
       {state === "category" && (
         <Box className={styles.header_search_chip_box}>
-          {services.map((category, index) => (
-            <Link href={`/search/category/${category.code}`} key={category.code}>
-              <Chip
-                label={lang === "fa" ? category.fa : category.en}
-                className={styles.header_search_box_chips}
-              />
-            </Link>
-          ))}
+          <FormControl
+            fullWidth
+            sx={{ bgcolor: "white", borderRadius: "0.3rem" }}
+          >
+            <Select displayEmpty value="choose">
+							<MenuItem disabled value="choose">
+                {t("common:category")}
+              </MenuItem>
+              {services.map((category, index) => (
+                <Link
+                  href={`/search/category/${category.code}`}
+                  key={category.code}
+                  passHref={true}
+                >
+                  <MenuItem>
+                    {lang === "fa" ? category.fa : category.en}
+                  </MenuItem>
+                </Link>
+              ))}
+            </Select>
+          </FormControl>
         </Box>
       )}
     </Box>

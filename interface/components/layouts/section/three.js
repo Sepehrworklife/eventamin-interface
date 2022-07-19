@@ -23,8 +23,7 @@ export const SectionThree = (props) => {
 					variant="body1"
 					component="p"
 					className={styles.description}
-					textAlign="center"
-					sx={{mt: 4}}
+					sx={{mt: 4, whiteSpace: "pre-line"}}
 				>
 					{props.description}
 				</Typography>

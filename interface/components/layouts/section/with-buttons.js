@@ -35,7 +35,6 @@ export const SectionWithButtons = (props) => {
 					variant="body1"
 					component="p"
 					className={styles.description}
-					align="center"
 					marginBottom={4}
 				>
 					{props.description}

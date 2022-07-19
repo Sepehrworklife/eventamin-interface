@@ -18,6 +18,8 @@ import { grey } from "@mui/material/colors";
 import RecordVoiceOverTwoToneIcon from "@mui/icons-material/RecordVoiceOverTwoTone";
 import MarkEmailReadTwoToneIcon from "@mui/icons-material/MarkEmailReadTwoTone";
 import WorkspacePremiumTwoToneIcon from "@mui/icons-material/WorkspacePremiumTwoTone";
+import CardIcon from "../../elements/card-icon/card-icon";
+import Carousel from "react-material-ui-carousel";
 
 export const BuyersVsProviders = (props) => {
   const { value: isDark } = useDarkMode();
@@ -45,108 +47,31 @@ export const BuyersVsProviders = (props) => {
             >
               {t("common:buyer")}
             </Typography>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <HourglassBottomTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.time.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.time.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <DiamondTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.information.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.information.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <LockTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.exclusive.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.exclusive.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
+            <Carousel
+              autoplay={true}
+              autoplaySpeed={5000}
+              animation="fade"
+              duration={1000}
+              indicators={false}
+              sx={{ height: 1 }}
+            >
+              <CardIcon
+                title={t("buyers_vs_providers.time.title")}
+                content={t("buyers_vs_providers.time.content")}
+                icon={<HourglassBottomTwoToneIcon fontSize="42" />}
+              />
+
+              <CardIcon
+                title={t("buyers_vs_providers.information.title")}
+                content={t("buyers_vs_providers.information.content")}
+                icon={<DiamondTwoToneIcon fontSize="42" />}
+              />
+              <CardIcon
+                title={t("buyers_vs_providers.exclusive.title")}
+                content={t("buyers_vs_providers.exclusive.content")}
+                icon={<LockTwoToneIcon fontSize="42" />}
+              />
+            </Carousel>
           </Grid>
           <Grid xs={12} md={6} item>
             <Typography
@@ -157,115 +82,42 @@ export const BuyersVsProviders = (props) => {
             >
               {t("common:provider")}
             </Typography>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <RecordVoiceOverTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.reach.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.reach.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <MarkEmailReadTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.transparent.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.transparent.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
-            <Card className={styles.item}>
-              <CardContent>
-                <Grid container alignItems="center">
-                  <Grid item xs={12} sm={3}>
-                    <Typography
-                      variant="h2"
-                      component="div"
-                      align="center"
-                      className={styles.icon}
-                    >
-                      <WorkspacePremiumTwoToneIcon fontSize="" />
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={12} sm={9}>
-                    <Typography
-                      variant="h5"
-                      component="h5"
-                      fontWeight="600"
-                      marginBottom={1}
-                    >
-                      {t("buyers_vs_providers.premium.title")}
-                    </Typography>
-                    <Typography
-                      color={textColor}
-                      variant="body1"
-                      component="p"
-                      fontWeight="200"
-                    >
-                      {t("buyers_vs_providers.premium.content")}
-                    </Typography>
-                  </Grid>
-                </Grid>
-              </CardContent>
-            </Card>
+
+            <Carousel
+              autoplay={true}
+              autoplaySpeed={5000}
+              animation="fade"
+              duration={700}
+              indicators={false}
+              sx={{ height: 1 }}
+            >
+              <CardIcon
+                title={t("buyers_vs_providers.reach.title")}
+                content={t("buyers_vs_providers.reach.content")}
+                icon={<RecordVoiceOverTwoToneIcon fontSize="42" />}
+              />
+
+              <CardIcon
+                title={t("buyers_vs_providers.transparent.title")}
+                content={t("buyers_vs_providers.transparent.content")}
+                icon={<MarkEmailReadTwoToneIcon fontSize="42" />}
+              />
+              <CardIcon
+                title={t("buyers_vs_providers.premium.title")}
+                content={t("buyers_vs_providers.premium.content")}
+                icon={<WorkspacePremiumTwoToneIcon fontSize="42" />}
+              />
+            </Carousel>
           </Grid>
         </Grid>
-				<Box sx={{display: "flex", justifyContent: "center", mt: 8}}>
-        <a href="https://saberansar.com/en/" target="_blank">
-          <img src="/uploads/images/advertise/2.gif" className={styles.image} />
-        </a>
-			</Box>
+        <Box sx={{ display: "flex", justifyContent: "center", mt: 8 }}>
+          <a href="https://saberansar.com/en/" target="_blank">
+            <img
+              src="/uploads/images/advertise/2.gif"
+              className={styles.image}
+            />
+          </a>
+        </Box>
       </Container>
     </Box>
   );

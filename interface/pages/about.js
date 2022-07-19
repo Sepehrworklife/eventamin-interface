@@ -8,46 +8,50 @@ import { SectionThree } from "../components/layouts/section/three";
 import { SectionWithButtons } from "../components/layouts/section/with-buttons";
 import { FooterOne } from "../components/layouts/footer/one";
 import { CtaRegister } from "../components/layouts/section/cta-register";
-import Head from 'next/head';
+import Head from "next/head";
 
 const About = () => {
-	const { t, lang } = useTranslation("about");
-	const { value: isDark } = useDarkMode();
+  const { t, lang } = useTranslation("about");
+  const { value: isDark } = useDarkMode();
 
-	// Initial states
-	const [firstBgColor, setFirstBgColor] = React.useState(null);
+  // Initial states
+  const [firstBgColor, setFirstBgColor] = React.useState(null);
 
-	React.useEffect(() => {
-		isDark ? setFirstBgColor(grey[900]) : setFirstBgColor(grey[200]);
-	});
+  React.useEffect(() => {
+    isDark ? setFirstBgColor(grey[900]) : setFirstBgColor(grey[200]);
+  });
 
-	return (
-		<>
-			<Head>
-				<title>{t("head:about.title")}</title>
-				<meta name="description" content={t("head:about.description")}/>
-				<meta name="keywords" content={t("head:about.keywords")}/>
-			</Head>
-			<MainNavbar />
-			<SecondaryHero subHead={t("hero.sub_head")} head={t("hero.head")} />
-			<SectionThree
-				title={t("section_one.title")}
-				description={t("section_one.description")}
-			/>
-			<SectionWithButtons
-				title={t("second_section.title")}
-				description={t("second_section.description")}
-				bgColor={firstBgColor}
-				firstLink="/directory"
-				secondLink="/register"
-				firstButtonText={t("second_section.register_button_text")}
-				secondButtonText={t("second_section.second_button_text")}
-			/>
-			<CtaRegister />
+  return (
+    <>
+      <Head>
+        <title>{t("head:about.title")}</title>
+        <meta name="description" content={t("head:about.description")} />
+        <meta name="keywords" content={t("head:about.keywords")} />
+      </Head>
+      <MainNavbar />
+      <SecondaryHero subHead={t("hero.sub_head")} head={t("hero.head")} />
+      <SectionThree
+        title={t("section_one.title")}
+        description={t("section_one.description")}
+      />
+      <SectionWithButtons
+        title={t("second_section.title")}
+        description={t("second_section.description")}
+        bgColor={firstBgColor}
+        firstLink="/directory"
+        secondLink="/register"
+        firstButtonText={t("second_section.register_button_text")}
+        secondButtonText={t("second_section.second_button_text")}
+      />
+      <SectionThree
+        title={t("purpose.title")}
+        description={t("purpose.description")}
+      />
+      <CtaRegister />
 
-			<FooterOne />
-		</>
-	);
+      <FooterOne />
+    </>
+  );
 };
 
 export default About;

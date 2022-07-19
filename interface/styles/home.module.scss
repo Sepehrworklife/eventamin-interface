@@ -7,7 +7,7 @@
   }
 }
 #main_hero {
-  background-image: url(http://eventamin.com:4000/uploads/images/exhibition2.jpg);
+  background-image: url(https://eventamin.com/uploads/images/exhibition2.jpg);
   min-height: 400px;
   background-size: cover;
   background-position: center;
@@ -108,11 +108,7 @@
 }
 
 .header_search_chip_box {
-	overflow: hidden;
-	animation: fadeIn;
-	animation-duration: 1s;
 	margin-top: 0.7rem;
-	animation-timing-function: ease-in-out;
 }
 
 .header_search_box_chips {
