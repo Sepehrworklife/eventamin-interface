@@ -65,7 +65,12 @@ const ExhibitionIntroduction = () => {
             );
           })}
         {error && (
-          <Typography variant="h6" color="text.secondary">
+          <Typography
+            variant="h6"
+            color="text.secondary"
+            sx={{ mt: 3, textAlign: "center" }}
+            component="p"
+          >
             {t("common:no_record")}
           </Typography>
         )}

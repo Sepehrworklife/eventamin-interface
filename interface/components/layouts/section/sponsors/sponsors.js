@@ -7,7 +7,7 @@ import Image from "next/image";
 const Sponsors = () => {
   return (
     <>
-      <Container maxWidth="lg" id={styles.sponsors_container}>
+      <Container maxWidth="xl" id={styles.sponsors_container}>
         {SmDownCarousel}
         {MdDownCarousel}
         {lgUpCarousel}
@@ -17,7 +17,6 @@ const Sponsors = () => {
 };
 
 export default Sponsors;
-
 const SmDownCarousel = (
   <Hidden smUp>
     <Carousel
@@ -90,7 +89,14 @@ const SmDownCarousel = (
             alt="sponsors"
           />
         </Grid>
-        <Grid item xs={6}></Grid>
+<Grid item xs={6}>
+          <Image
+            src="/uploads/images/sponsors/8.png"
+            height="200"
+            width="200"
+            alt="sponsors"
+          />
+        </Grid>
       </Grid>
     </Carousel>
   </Hidden>
@@ -164,7 +170,14 @@ const MdDownCarousel = (
             alt="sponsors"
           />
         </Grid>
-        <Grid item xs={3}></Grid>
+        <Grid item xs={3}>
+          <Image
+            src="/uploads/images/sponsors/8.png"
+            height="200"
+            width="200"
+            alt="sponsors"
+          />
+        </Grid>
       </Grid>
     </Carousel>
   </Hidden>
@@ -179,7 +192,7 @@ const lgUpCarousel = (
       animation="slide"
       duration={700}
     >
-      <Grid container spacing={3} columns={7}>
+      <Grid container spacing={2} columns={8}>
         <Grid item xs={1}>
           <Image
             src="/uploads/images/sponsors/1.png"
@@ -231,6 +244,14 @@ const lgUpCarousel = (
         <Grid item xs={1}>
           <Image
             src="/uploads/images/sponsors/7.png"
+            height="200"
+            width="200"
+            alt="sponsors"
+          />
+        </Grid>
+        <Grid item xs={1}>
+          <Image
+            src="/uploads/images/sponsors/8.png"
             height="200"
             width="200"
             alt="sponsors"

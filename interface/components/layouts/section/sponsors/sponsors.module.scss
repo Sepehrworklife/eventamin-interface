@@ -1,3 +1,7 @@
 #sponsors_container {
 	margin-top: 2rem;
+
+	& img:hover {
+		opacity: 0.5;
+	}
 }

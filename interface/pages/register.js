@@ -124,7 +124,7 @@ const Register = (props) => {
 
 	const request = async (payload) => {
 		setIsLoading(true);
-		base("post", payload)
+		await base("post", payload)
 			.then((result) => {
 				if (result.status === 201) {
 					setSnackbar({

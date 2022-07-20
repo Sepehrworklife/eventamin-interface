@@ -61,7 +61,7 @@ const Login = (props) => {
 
 	const request = async (username, password) => {
 		setIsLoading(true);
-		login(username, password)
+		await login(username, password)
 			.then((result) => {
 				auth.setToken(result.data.access_token);
 				setSnackbar({

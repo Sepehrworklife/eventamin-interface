@@ -1,7 +1,7 @@
 
 .container {
 	min-height: 100vh;
-	display: flex;
+	display: flex !important;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
@@ -16,7 +16,6 @@
 .card {
 	width: 100%;
 }
-
 .cardAction {
 	flex-direction: column;
 }
